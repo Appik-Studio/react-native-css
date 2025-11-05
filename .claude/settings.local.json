@@ -5,7 +5,10 @@
       "Bash(cat:*)",
       "Bash(yarn lint:*)",
       "Bash(yarn eslint:*)",
-      "Bash(npx eslint:*)"
+      "Bash(npx eslint:*)",
+      "Bash(gh workflow:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []

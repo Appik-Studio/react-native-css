@@ -1,6 +1,8 @@
-name: Release & Publish to NPM
+name: Release & Publish to NPM (Disabled for fork)
 
-on: workflow_dispatch
+on:
+  # Disabled for Appik-Studio fork - use publish.yml instead
+  workflow_call: # Only callable from other workflows, not manually
 
 permissions:
   contents: write

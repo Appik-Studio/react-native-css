@@ -1,12 +1,8 @@
-name: Nightly Release & Publish to NPM
+name: Nightly Release & Publish to NPM (Disabled for fork)
 
 on:
-  schedule:
-    - cron: "0 0 * * *" # every day at midnight UTC
-  workflow_dispatch: # allow manual trigger
-  pull_request: # When a PR had the "publish-nightly" label
-    types: [closed]
-    branches: [main]
+  # Disabled for Appik-Studio fork - use publish.yml instead
+  workflow_dispatch: # allow manual trigger only
 
 jobs:
   nightly:

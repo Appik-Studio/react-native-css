@@ -1,11 +1,7 @@
-name: AI Moderator
+name: AI Moderator (Disabled for fork)
 on:
-  issues:
-    types: [opened]
-  issue_comment:
-    types: [created]
-  pull_request_review_comment:
-    types: [created]
+  # Disabled for Appik-Studio fork
+  workflow_dispatch: # Manual only
 
 jobs:
   spam-detection:
