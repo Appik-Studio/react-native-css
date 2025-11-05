@@ -1,3 +1,31 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/preflight.css" layer(base);
-@import "tailwindcss/utilities.css"; 
+@import "tailwindcss/utilities.css";
+
+/* Définir les variables de couleurs */
+:root {
+  --color-app-bg: white;
+  --color-app-text: rgb(153 27 27); /* red-800 */
+  --color-button-bg: rgb(229 231 235); /* gray-200 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-app-bg: rgb(17 24 39); /* gray-900 */
+    --color-app-text: rgb(248 113 113); /* red-400 */
+    --color-button-bg: rgb(55 65 81); /* gray-700 */
+  }
+}
+
+/* Créer les classes utilitaires custom */
+.bg-app {
+  background-color: var(--color-app-bg);
+}
+
+.text-app {
+  color: var(--color-app-text);
+}
+
+.bg-button {
+  background-color: var(--color-button-bg);
+} 

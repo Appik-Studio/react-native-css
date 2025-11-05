@@ -1,5 +1,5 @@
 {
-  "name": "react-native-css",
+  "name": "@appik-studio/react-native-css",
   "version": "3.0.1",
   "description": "A CSS polyfill for React Native",
   "exports": {
@@ -165,16 +165,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nativewind/react-native-css.git"
+    "url": "git+https://github.com/Appik-Studio/react-native-css.git"
   },
   "author": "Mark Lawlor <mwlawlor@gmail.com> (https://github.com/marklawlor)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nativewind/react-native-css/issues"
   },
-  "homepage": "https://github.com/nativewind/react-native-css#readme",
+  "homepage": "https://github.com/Appik-Studio/react-native-css#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
   },
   "files": [
     "src",

@@ -87,3 +87,4 @@ dist/
 
 .env
 .npmrc
+/my-expo-app
