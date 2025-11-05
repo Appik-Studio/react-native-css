@@ -1,9 +1,8 @@
-name: Lint Commit Messages in Merge Queue
+name: Lint Commit Messages in Merge Queue (Disabled for fork)
 
 on:
-  merge_group:
-    types:
-      - checks_requested
+  # Disabled for Appik-Studio fork
+  workflow_dispatch: # Manual only
 
 jobs:
   commitlint:
