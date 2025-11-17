@@ -88,3 +88,4 @@ dist/
 .env
 .npmrc
 /my-expo-app
+.claude/settings.local.json

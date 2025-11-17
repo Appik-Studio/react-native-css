@@ -178,21 +178,13 @@ export function updateRules(
         const pressable = activeFamily.has(state.ruleEffectGetter);
 
         if (Boolean(variables) !== Boolean(state.variables)) {
-          console.log(
-            `ReactNativeCss: className '${source}' added or removed a variable after the initial render. This causes the components state to be reset and all children be re-mounted. Use the className 'will-change-variable' to avoid this warning. If this was caused by sibling components being added/removed, use a 'key' prop so React can track the component correctly.`,
-          );
+          // Variable added or removed after initial render
         } else if (Boolean(containers) !== Boolean(state.containers)) {
-          console.log(
-            `ReactNativeCss: className '${source}' added or removed a container after the initial render. This causes the components state to be reset and all children be re-mounted. This will cause unexpected behavior. Use the className 'will-change-container' to avoid this warning. If this was caused by sibling components being added/removed, use a 'key' prop so React can track the component correctly.`,
-          );
+          // Container added or removed after initial render
         } else if (animated !== state.animated) {
-          console.log(
-            `ReactNativeCss: className '${source}' added or removed an animation after the initial render. This causes the components state to be reset and all children be re-mounted. This will cause unexpected behavior. Use the className 'will-change-animation' to avoid this warning. If this was caused by sibling components being added/removed, use a 'key' prop so React can track the component correctly.`,
-          );
+          // Animation added or removed after initial render
         } else if (pressable !== state.pressable) {
-          console.log(
-            `ReactNativeCss: className '${source}' added or removed a pressable state after the initial render. This causes the components state to be reset and all children be re-mounted. This will cause unexpected behavior. Use the className 'will-change-pressable' to avoid this warning. If this was caused by sibling components being added/removed, use a 'key' prop so React can track the component correctly.`,
-          );
+          // Pressable state added or removed after initial render
         }
       }
     }

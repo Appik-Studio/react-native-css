@@ -25,6 +25,7 @@ export default tseslint.config(
     "**/prettier.config.[cm]js",
     "**/babel.config.js",
     "**/metro.config.js",
+    "my-expo-app/**",
   ]),
   {
     rules: {
